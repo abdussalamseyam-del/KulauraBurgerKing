@@ -27,7 +27,7 @@ export function Menu() {
       );
 
       const cards = document.querySelectorAll('.menu-card');
-      cards.forEach((card, i) => {
+      cards.forEach((card) => {
         gsap.fromTo(card,
           { opacity: 0, y: 80, scale: 0.95 },
           {

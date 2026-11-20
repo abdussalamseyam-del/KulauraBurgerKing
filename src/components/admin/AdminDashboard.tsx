@@ -9,7 +9,6 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (tab: Tab) => void 
   const totalOrders = orders.length;
   const totalSales = orders.reduce((sum, o) => sum + o.total, 0);
   const pendingOrders = orders.filter((o) => o.status === 'pending').length;
-  const rejectedOrders = orders.filter((o) => o.status === 'rejected').length;
   const totalProducts = products.length;
 
   const stats = [
