@@ -55,10 +55,6 @@ export function BuildYourBurger() {
     return () => ctx.revert();
   }, []);
 
-  const allIngredients = useMemo(() => [
-    ...BURGER_BUNS, ...BURGER_PATTIES, ...BURGER_TOPPINGS, ...BURGER_SAUCES,
-  ], []);
-
   const totalPrice = useMemo(() => {
     const bun = BURGER_BUNS.find((b) => b.id === selections.bun)?.price ?? 0;
     const patty = BURGER_PATTIES.find((p) => p.id === selections.patty)?.price ?? 0;

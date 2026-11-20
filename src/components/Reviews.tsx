@@ -18,7 +18,7 @@ export function Reviews() {
       );
 
       const cards = document.querySelectorAll('.review-card');
-      cards.forEach((card, i) => {
+      cards.forEach((card) => {
         gsap.fromTo(card,
           { opacity: 0, y: 80, scale: 0.95 },
           { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: 'power3.out',
